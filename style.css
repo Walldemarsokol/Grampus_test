@@ -36,16 +36,7 @@
     padding-right: calc(50% - 960px);
 }
 
-.body {
-
-    background-image: url("./Img/sky_with_clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-}
-
 .head {
-
     width: 1920px;
     height: 100px;
     border: 2px solid black;
@@ -53,7 +44,6 @@
 
 .head_menu {
     display: flex;
-
     border: 2px solid black;
 
 }
@@ -72,32 +62,21 @@
     line-height: 24px;
 }
 
-.back {
-    width: 2048px;
-    height: 1361px;
-    flex-shrink: 0;
-    background: url(./Img/sky_with_clouds.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-}
-
 .banner__block {
-    border: 2px solid black;
     width: 1920px;
     height: 600px;
-    background: url("./Img/sky.svg"), url("./Img/home_1.svg");
+    background: url('./Img/home_1.svg'), url('./Img/sky.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     margin-bottom: 60px;
 }
 
+.banner__blocks {
+    padding: 101px 1008px 0px 458px;
+}
+
 .block_h1 {
-    padding-top: 101px;
-    padding-left: 458px;
-    padding-bottom: 20px;
-    padding-right: 1008px;
     color: var(--4, #FFF);
     /* Н-1 */
     font-family: "PTRootUIWebRegular";
@@ -109,9 +88,7 @@
 }
 
 .block_h2 {
-    padding-left: 458px;
-    padding-bottom: 40px;
-    padding-right: 1008px;
+    padding: 20px 0 40px 0;
     color: var(--4, #FFF);
     font-family: "PTRootUIWebRegular";
     font-size: 20px;
@@ -122,9 +99,7 @@
 }
 
 .block_button {
-    padding-left: 458px;
-    padding-right: 1331px;
-    padding-bottom: 214px;
+    width: 259px;
 
 }
 
@@ -132,8 +107,15 @@
     display: inline-flex;
     padding: 15px 35px;
     align-items: flex-start;
-    gap: 10px;
+    color: var(--7, #0046BB);
+    font-family: "PTRootUIWebBold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
 }
+
 
 .banner_button_style {
     border-radius: 30px;
@@ -150,12 +132,6 @@
     flex-wrap: wrap;
 }
 
-.materials_block {
-    border: 2px solid black;
-
-
-}
-
 .categories {
     display: flex;
     justify-content: center;
@@ -163,7 +139,7 @@
     gap: 30px;
 }
 
-.categ_text {
+.main_category_text {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -180,6 +156,10 @@
 }
 
 .categories_block {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center; */
     width: 370px;
     height: 370px;
     border-radius: 15px;
@@ -206,15 +186,19 @@
     height: 64px;
 }
 
-.cat_arrow {
-    background-image: url('./Img/Arrow_Right.svg');
+.round_button {
+    background-image: url('./Img/Arrow_Right.svg'), url('./Img/Ellipse_21.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 50px;
+    height: 50px;
 }
 
 .block_form_main {
     margin-top: 80px;
     height: 442px;
     width: 1170px;
-    flex-wrap: wrap;
     background-image: linear-gradient(90deg, rgba(56, 56, 56, 0.90) 0%, rgba(56, 56, 56, 0.00) 100%), url('./Img/city.svg');
     border-radius: 15px;
 }
@@ -281,7 +265,7 @@
     gap: 30px;
 }
 
-.third_block{
+.third_block {
     width: 492px;
     padding: 37px 0px 0px 80px;
     display: flex;
@@ -291,14 +275,8 @@
 }
 
 .personal_text {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-
     width: 294px;
-    /* padding: 37px 0px 62px 0px; */
     color: var(--4, #FFF);
-
     /* Вспомогательный */
     font-family: "PTRootUIWebMedium";
     font-size: 14px;
@@ -340,17 +318,12 @@
 .block_about {
     margin-top: 80px;
     width: 1170px;
-    height: 500px;
-    border: black solid 2px;
-}
+    height: 800px;
 
-.about_txt {
-    border: 1px solid black;
-    width: 1042px;
-    height: 96px;
 }
 
 .orion_txt {
+    padding-bottom: 40px;
     color: var(--1, #383838);
 
     /* Н-2 */
@@ -360,6 +333,8 @@
     font-weight: 700;
     line-height: 48px;
     /* 120% */
+    width: 1042px;
+    height: 96px;
 }
 
 .orion {
@@ -372,15 +347,99 @@
     text-transform: uppercase;
 }
 
+.about_under {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.left_about {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.mission {
+
+    width: 385px;
+    height: 183px;
+    border-radius: 15px;
+    background: var(--9, #F2F6FC);
+}
+
+.h1_mission {
+    color: var(--1, #383838);
+
+    /* Н-4 */
+    font-family: "PTRootUIWebMedium";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+    padding: 25px 236px 5px 65px;
+}
+
+.p_mission {
+    padding: 0 30px 25px 65px;
+    color: var(--1, #383838);
+    font-family: "PTRootUIWebMedium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.result {
+    width: 385px;
+    height: 183px;
+    border-radius: 15px;
+    background: var(--9, #F2F6FC);
+}
+
+.about_txt {
+    width: 700px;
+    height: 420px;
+    color: var(--1, #383838);
+    /* Основной текст */
+    font-family: "PTRootUIWebMedium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.txt_0 {
+    display: flex;
+    padding-top: 15px;
+    gap: 10px;
+}
+
+.txt_0_1 {
+    padding-top: 15px;
+}
+
+.orion_2 {
+    color: var(--1, #383838);
+    font-family: "PTRootUIWebMedium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
 .house {
     margin-top: 80px;
     margin-bottom: 100px;
-    border: solid black 2px;
     width: 1920px;
     height: 643px;
     background-image: url('./Img/hous.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-
 }
