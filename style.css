@@ -214,26 +214,20 @@
     margin-top: 80px;
     height: 442px;
     width: 1170px;
-    background-image: linear-gradient(90deg, rgba(56, 56, 56, 0.90) 0%, rgba(56, 56, 56, 0.00) 100%),url('./Img/city.svg');
+    flex-wrap: wrap;
+    background-image: linear-gradient(90deg, rgba(56, 56, 56, 0.90) 0%, rgba(56, 56, 56, 0.00) 100%), url('./Img/city.svg');
     border-radius: 15px;
 }
 
 .form_blocks {
     width: 492px;
     height: 96px;
-
-}
-
-.block_about {
-    margin-top: 80px;
-    width: 1170px;
-    height: 500px;
-    border: black solid 2px;
 }
 
 .h1_form {
     padding: 55px 598px 0px 80px;
-    width: 495px;
+    width: 492px;
+    height: 96px;
     color: var(--4, #FFF);
 
     /* Н-2 */
@@ -256,6 +250,98 @@
     font-weight: 500;
     line-height: 24px;
     /* 150% */
+}
+
+
+.form_buttons_style {
+    width: 230px;
+    height: 54px;
+    border-radius: 30px;
+    background: var(--4, #FFF);
+}
+
+.but_text_style {
+    color: var(--7, #0046BB);
+    font-family: "PTRootUIWebMedium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+}
+
+.form_buttons {
+    width: 492px;
+    padding-left: 80px;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+.third_block{
+    width: 492px;
+    padding: 37px 0px 0px 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 48px;
+}
+
+.personal_text {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+    width: 294px;
+    /* padding: 37px 0px 62px 0px; */
+    color: var(--4, #FFF);
+
+    /* Вспомогательный */
+    font-family: "PTRootUIWebMedium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+.half_text_1 {
+    color: var(--4, #FFF);
+    font-family: "PTRootUIWebMedium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration-line: underline;
+}
+
+.send_butt {
+    border-radius: 30px;
+    background: var(--7, #0046BB);
+    display: inline-flex;
+    padding: 15px 35px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.text_on_send_button {
+    color: var(--4, #FFF);
+    font-family: "PTRootUIWebMedium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.block_about {
+    margin-top: 80px;
+    width: 1170px;
+    height: 500px;
+    border: black solid 2px;
 }
 
 .about_txt {
