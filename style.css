@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+
 }
 
 @font-face {
@@ -36,7 +37,7 @@
     padding-right: calc(50% - 960px);
 }
 
-.body{
+.body {
     background-color: #FFF;
 }
 
@@ -45,23 +46,24 @@
     justify-content: center;
     align-items: center;
     width: 1920px;
-    border: 2px solid black;
 }
 
-.head_menu {
-    width: 800px;
-    height: 100px;
+.head_block {
+    width: 682px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 2px solid black;
 }
+
+
 
 .main__block {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 1170px;
 }
 
 .text__header {
@@ -73,11 +75,83 @@
     line-height: 24px;
 }
 
-.info_data{
+.info {
     display: flex;
     justify-content: space-between;
-    width: 800px;
-    
+    width: 682px;
+}
+
+.info_tools {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info_data {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.mail_img {
+    background-image: url('./Img/Message.svg'), url('./Img/Main_menu_elips.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 22px;
+    height: 22px;
+}
+
+.number_img {
+    background-image: url('./Img/Call.svg'), url('./Img/Main_menu_elips.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 22px;
+    height: 22px;
+}
+
+.mail {
+    width: 150px;
+    display: flex;
+    gap: 15px;
+}
+
+.number {
+    width: 200px;
+    display: flex;
+    gap: 15px;
+}
+
+
+.head_menu {
+    width: 682px;
+    display: flex;
+    justify-content: space-between;
+
+    /* 150% */
+}
+
+.call_button_{
+    color: var(--4, #FFF);
+    font-family: "PTRootUIWebBold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+a:hover {
+    color: rgb(247, 6, 6);
+}
+
+a {
+    color: var(--1, #383838);
+    font-family: "PTRootUIWebBold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
 }
 
 .split_line {
@@ -90,13 +164,11 @@
 .call_button {
     border-radius: 30px;
     background: var(--7, #0046BB);
-    width: 191px;
-    height: 54px;
 }
 
 .call_but_text {
     color: var(--4, #FFF);
-    font-family: "PT Root UI";
+    font-family: "PTRootUIWebBold";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -107,8 +179,6 @@
     align-items: flex-start;
     gap: 10px;
 }
-
-
 
 .banner__block {
     width: 1920px;
@@ -151,7 +221,28 @@
 
 }
 
-.bunner_button_text {
+.first_txt_block {
+    padding: 60px 90px 40px 90px;
+}
+
+.txt_in_window {
+    padding: 40px 90px 60px 90px;
+}
+
+
+.txt_decor_in_window {
+    color: var(--1, #383838);
+
+    /* Основной текст */
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Кнопка для открытия */
+.css-modal-open {
     display: inline-flex;
     padding: 15px 35px;
     align-items: flex-start;
@@ -161,7 +252,118 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    /* 150% */
+    cursor: grab;
+}
+
+.css-modal-open:hover,
+.css-modal-open:active,
+.css-modal-open:focus {
+    color: #46ac5f;
+}
+
+.css-modal-open:hover:before,
+.css-modal-open:active:before,
+.css-modal-open:focus:before {
+    transform: translateX(0);
+}
+
+/* Контейнер, который затемняет страницу */
+.css-modal-target {
+    display: none;
+}
+
+.css-modal-target:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    background: rgba(39, 39, 39, 0.5);
+}
+
+/* Модальное окно */
+.css-modal-target .cmt {
+    font-family: "PTRootUIWebBold";
+    /* padding: 20px; */
+    /* height: 2944px; */
+    z-index: 8;
+    max-width: 1170px;
+    max-height: 100%;
+    transition: 0.5s;
+    /* border: 6px solid #BFE2FF; */
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+    text-align:start;
+    overflow: auto;
+    animation: scale 0.5s ease;
+}
+
+/* Кнопка с крестиком закрывающая окно */
+.css-modal-close {
+    position: relative;
+    display: block;
+}
+
+.css-modal-close:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    right: 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+    background-image: url("./Img/close_1.svg");
+    background-color: #FFF;
+    background-size: cover;
+    animation: move 0.5s ease;
+}
+
+.css-modal-close:before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    content: "";
+    cursor: default;
+}
+
+/* Анимации */
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes move {
+    0% {
+        right: -80px;
+    }
+
+    100% {
+        right: 20px;
+    }
+}
+
+@keyframes bg {
+    0% {
+        background: rgba(51, 122, 183, 0);
+    }
+
+    100% {
+        background: rgba(39, 39, 39, 0.5);
+    }
 }
 
 
@@ -182,6 +384,18 @@
 
 .materials_block {
     width: 1170px;
+}
+
+.first_block_materials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .categories {
@@ -383,8 +597,17 @@
 .block_about {
     margin-top: 80px;
     width: 1170px;
-    height: 800px;
+    height: auto;
 
+}
+
+.elips {
+    width: 799.71px;
+    height: 501.729px;
+    transform: rotate(-30deg);
+    flex-shrink: 0;
+    border-radius: 799.71px;
+    border: 1px solid var(--8, #E6EDF8);
 }
 
 .orion_txt {
@@ -440,7 +663,7 @@
     position: absolute;
     background-size: auto;
     background-position: center;
-    top: 2010px;
+    top: 2030px;
     left: 370px;
     width: 80px;
     height: 80px;
@@ -452,7 +675,7 @@
     background-size: auto;
     position: absolute;
     background-position: center;
-    top: 2235px;
+    top: 2255px;
     left: 370px;
     width: 80px;
     height: 80px;
@@ -529,6 +752,90 @@
     height: 643px;
     background-image: url('./Img/hous.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-size: contain;
+    background-position: center;
+}
+
+.house_content {
+    width: 1170px;
+    padding: 60px 375px 0 375px;
+}
+
+.main_house_content {
+    color: var(--4, #FFF);
+
+    /* Н-2 */
+    font-family: "PTRootUIWebBold";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 120% */
+}
+
+.house_txt {
+    padding-top: 5px;
+    color: var(--4, #FFF);
+
+    /* Основной текст */
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.house_windows {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: 108px 108px;
+    column-gap: 60px;
+    row-gap: 30px;
+    justify-content: end;
+    /* gap: 30px; */
+}
+
+
+.window_style {
+    border-radius: 15px;
+    background: var(--2, #859FBA);
+    /* width: 340px;
+    height: 108px; */
+}
+
+.windows_text_1 {
+    width: 205px;
+    height: 48px;
+    padding: 30px 70px 30px 65px;
+    display: flex;
+    align-items: center;
+}
+
+.window_img {
+    background-image: url('./Img/secure.svg'), url('./Img/Ellipse_31.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    top: 1500px;
+    left: 200px;
+}
+
+.wind_txt_style {
+    color: var(--1, #383838);
+
+    /* Н-6 */
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+.windows_text_2 {
+    width: 205px;
+    height: 24px;
+    padding: 42px 70px 42px 65px;
 }
