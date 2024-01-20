@@ -32,6 +32,124 @@
     font-style: normal;
 }
 
+.consult_box {
+    width: 570px;
+    height: 736px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block_1 {
+    padding-top: 50px;
+    width: 430px;
+    height: 144px;
+    color: var(--1, #383838);
+    font-family: "PTRootUIWebBold";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.block_2 {
+    color: var(--7, #0046BB);
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 30px;
+    border: 1px solid var(--7, #0046BB);
+    background: var(--4, #FFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 54px;
+}
+
+.block_3 {
+    width: 430px;
+    height: 54px;
+    border-radius: 30px;
+    border: 1px solid var(--7, #0046BB);
+    background: var(--4, #FFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_4 {
+    width: 430px;
+    height: 150px;
+    border-radius: 30px;
+    border: 1px solid var(--7, #0046BB);
+    background: var(--4, #FFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_5 {
+    width: 430px;
+    height: 54px;
+    border-radius: 30px;
+    background: var(--7, #0046BB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.block_6 {
+    width: 430px;
+    height: 40px;
+    color: var(--1, #383838);
+    font-family: "PTRootUIWebRegular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+
+.block_6_ {
+    color: var(--1, #383838);
+    font-family: "PTRootUIWebRegular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration-line: underline;
+}
+
+.txt_decor_5 {
+    color: var(--4, #FFF);
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+
+.block_text_1 {
+    color: var(--7, #0046BB);
+    font-family: "PT Root UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 30px;
+    border: 1px solid var(--7, #0046BB);
+    background: var(--4, #FFF);
+    /* 150% */
+}
+
 .center {
     padding-left: calc(50% - 960px);
     padding-right: calc(50% - 960px);
@@ -252,7 +370,7 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .css-modal-open:hover,
@@ -366,6 +484,97 @@ a {
     }
 }
 
+/* Кнопка для открытия */
+.consult_modal-open {
+    display: inline-flex;
+    padding: 15px 35px;
+    align-items: flex-start;
+    color: var(--7, #0046BB);
+    font-family: "PTRootUIWebBold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.consult_modal-open:hover,
+.consult_modal-open:active,
+.consult_modal-open:focus {
+    color: #46ac5f;
+}
+
+.consult_modal-open:hover:before,
+.consult_modal-open:active:before,
+.consult_modal-open:focus:before {
+    transform: translateX(0);
+}
+
+/* Контейнер, который затемняет страницу */
+.consult_modal-target {
+    display: none;
+}
+
+.consult_modal-target:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    background: rgba(39, 39, 39, 0.5);
+}
+
+/* Модальное окно */
+.consult_modal-target .consult_cmt {
+    font-family: "PTRootUIWebBold";
+    z-index: 8;
+    max-width: 1170px;
+    max-height: 100%;
+    transition: 0.5s;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    overflow: auto;
+    animation: scale 0.5s ease;
+}
+
+/* Кнопка с крестиком закрывающая окно */
+.consult_modal-close {
+    position: relative;
+    display: block;
+}
+
+.consult_modal-close:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    right: 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+    background-image: url("./Img/close_1.svg");
+    background-color: #FFF;
+    background-size: cover;
+    animation: move 0.5s ease;
+}
+
+.consult_modal-close:before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    content: "";
+    cursor: default;
+}
+
 
 .banner_button_style {
     border-radius: 30px;
@@ -421,26 +630,6 @@ a {
     /* 120% */
 }
 
-.parent_popup {
-    background: #000;
-    height: 100%;
-    opacity: 0.9;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 0;
-    left: 0;
-  }
-.popup {
-    background-color: #00f;
-    height: 200px;
-    position: fixed;
-    top: 100px;
-    left: 40%;
-    color: #f00;
-    width: 300px;
-  }
-
 .block_img {
     padding: 43px 0 30px 0;
     gap: 20px;
@@ -450,22 +639,17 @@ a {
     padding: 26px 15px 5px 15px;
 }
 
-
-
 .categories_block:hover {
     background: var(--7, #0046BB);
 }
 
 .cat_text:hover {
     color: var(--4, #FFF);
-
-    /* Н-4 */
     font-family: "PT Root UI";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    /* 133.333% */
 }
 
 .round_button:hover {
@@ -500,14 +684,11 @@ a {
 
 .cat_text {
     color: var(--1, #383838);
-
-    /* Н-4 */
     font-family: "PTRootUIWebMedium";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    /* 133.333% */
     width: 166px;
     height: 64px;
 }
