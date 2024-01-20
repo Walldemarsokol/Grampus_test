@@ -132,7 +132,7 @@
     /* 150% */
 }
 
-.call_button_{
+.call_button_ {
     color: var(--4, #FFF);
     font-family: "PTRootUIWebBold";
     font-size: 16px;
@@ -299,7 +299,7 @@ a {
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
-    text-align:start;
+    text-align: start;
     overflow: auto;
     animation: scale 0.5s ease;
 }
@@ -421,6 +421,26 @@ a {
     /* 120% */
 }
 
+.parent_popup {
+    background: #000;
+    height: 100%;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+  }
+.popup {
+    background-color: #00f;
+    height: 200px;
+    position: fixed;
+    top: 100px;
+    left: 40%;
+    color: #f00;
+    width: 300px;
+  }
+
 .block_img {
     padding: 43px 0 30px 0;
     gap: 20px;
@@ -430,12 +450,39 @@ a {
     padding: 26px 15px 5px 15px;
 }
 
+
+
+.categories_block:hover {
+    background: var(--7, #0046BB);
+}
+
+.cat_text:hover {
+    color: var(--4, #FFF);
+
+    /* Н-4 */
+    font-family: "PT Root UI";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.round_button:hover {
+    background-image: url('./Img/Blue_arrow.svg'), url('./Img/white_elips.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+
 .categories_block {
     width: 370px;
     height: 370px;
     border-radius: 15px;
     background: var(--5, #F2F5F5);
-
+    cursor: pointer;
 }
 
 .text_block {
