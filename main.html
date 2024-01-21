@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
-
 <body>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -81,11 +79,11 @@
                             <!-- Всплывающее окно с формой обратной связи -->
                             <form action="#">
                                 <input type="text" class="block_2" placeholder="Ваше имя*" required>
-                                <input type="tel" class="block_3" placeholder="Номер телефона*">
-                                <input type="text" class="block_4" placeholder="Ваш комментарий" required>
-                                <button class="block_5">
+                                <input type="tel" class="block_3" placeholder="Номер телефона*"required>
+                                <input type="text" class="block_4" placeholder="Ваш комментарий">
+                                <button href="#" class="block_5">
                                     </form>
-                                    <a class="txt_decor txt_decor_5" href="#">Отправить</a>
+                                    <div class="txt_decor txt_decor_5">Отправить</div>
                                 </button>
                                 <div class="block_6">
                                     *Нажимая на кнопку, Вы соглашаетесь
@@ -224,7 +222,7 @@
                     </div>
                     <div class="form_buttons">
                         <input class="form_buttons_style but_text_style" type="text" placeholder="Ваше имя">
-                        <input class="form_buttons_style but_text_style" type="tel" placeholder="Номер телефона*">
+                        <input class="form_buttons_style but_text_style" type="tel" placeholder="Номер телефона*" required>
                     </div>
                     <div class="third_block">
                         <div class="personal_text">
@@ -235,11 +233,8 @@
                             обработку персональных данных
                                 </a>
                         </div>
-                        <div class="send_butt">
-                            <a href="#">
-                                <div class="text_on_send_button">Отправить</div>
-                            </a>
-                        </div>
+                        <button href="#" class="send_butt"><div class="text_on_send_button">Отправить</div></button>
+
                     </div>
                 </div>
             </div>
@@ -297,32 +292,33 @@
                 </div>
             </div>
             <!-- Блок с домом "Что привлекает наших клиентов" -->
+            <!-- цвет блоков не соответствует изображению в фигма -->
             <div class="house">
                 <div class="house_content">
                     <div class="main_house_content">Что привлекает наших клиентов?</div>
                     <div class="house_txt">Наши преимущества</div>
                     <div class="house_windows wind_txt_style">
-                        <div class="window window_style">
+                        <div class="window">
                             <div class="wind_left">
                                 <div class="window_img"></div>
                             </div>
-                            <div class="wind_right window_style">
+                            <div class="wind_right">
                                 <div class="windows_text_1">Гарантия на каждую товарную позицию</div>
                             </div>
                         </div>
-                        <div class="window window_style">
+                        <div class="window">
                             <div class="windows_text_1">Ориентир на предпочтение клиента при выборе товара</div>
                         </div>
-                        <div class="window window_style">
+                        <div class="window">
                             <div class="windows_text_1">Сжатые сроки поставки</div>
                         </div>
-                        <div class="window window_style">
+                        <div class="window">
                             <div class="windows_text_2">Выгодные цены</div>
                         </div>
-                        <div class="window window_style">
+                        <div class="window">
                             <div class="windows_text_2">Большой ассортимент</div>
                         </div>
-                        <div class="window window_style">
+                        <div class="window">
                             <div class="windows_text_2">Оставить заявку</div>
                         </div>
                     </div>
@@ -331,5 +327,4 @@
         </div>
     </section>
 </body>
-
 </html>

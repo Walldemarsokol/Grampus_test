@@ -499,6 +499,7 @@ a {
     0% {
         transform: scale(0);
     }
+
     100% {
         transform: scale(1);
     }
@@ -508,6 +509,7 @@ a {
     0% {
         right: -80px;
     }
+
     100% {
         right: 20px;
     }
@@ -517,6 +519,7 @@ a {
     0% {
         background: rgba(51, 122, 183, 0);
     }
+
     100% {
         background: rgba(39, 39, 39, 0.5);
     }
@@ -1054,19 +1057,9 @@ a {
 }
 
 
-/* .window_ {
+.window {
     border-radius: 15px;
-
-    background: var(--2, #dbdfe4);
-} */
-
-
-/* background: var(--2, #859FBA); */
-
-.window_style {
-    border-radius: 15px;
-    /* background: var(--2, #859FBA); */
-    background: var(--2, #dbdfe4);
+    background: var(--2, #859FBA);
 }
 
 .windows_text_1 {
@@ -1095,11 +1088,30 @@ a {
 
 .wind_txt_style {
     color: var(--1, #383838);
+
     /* Н-6 */
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+    line-height: 24px; /* 150% */
+}
+
+.window:hover {
+    background: var(--7, #0046BB);
+    color: var(--4, #FFF);
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 24px;
-    /* 150% */
+}
+
+.window:hover .wind_txt_style{
+    color: var(--4, #FFF);
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
 }
