@@ -541,7 +541,7 @@ a {
 .consult_modal-open:hover,
 .consult_modal-open:active,
 .consult_modal-open:focus {
-    color: #46ac5f;
+    color: #0a0a0a;
 }
 
 .consult_modal-open:hover:before,
@@ -689,7 +689,7 @@ a {
 
 .categories_block:hover .cat_text {
     color: var(--4, #FFF);
-    font-family: "PT Root UI";
+    font-family: "PTRootUIWebMedium";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
