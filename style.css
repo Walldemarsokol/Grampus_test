@@ -783,7 +783,6 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    /* 150% */
 }
 
 .form_buttons_style {
@@ -800,10 +799,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
-    padding-top: 15px;
-    padding-left: 35px;
-    padding-bottom: 15px;
+    padding-left: 20px;
 }
 
 .form_buttons {
@@ -1017,7 +1013,7 @@ a {
     height: 643px;
     background-image: url('./Img/hous.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -1040,13 +1036,11 @@ a {
 .house_txt {
     padding-top: 5px;
     color: var(--4, #FFF);
-    /* Основной текст */
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
 }
 
 .house_windows {
@@ -1057,14 +1051,22 @@ a {
     column-gap: 60px;
     row-gap: 30px;
     justify-content: end;
-    /* gap: 30px; */
 }
+
+
+/* .window_ {
+    border-radius: 15px;
+
+    background: var(--2, #dbdfe4);
+} */
+
+
+/* background: var(--2, #859FBA); */
 
 .window_style {
     border-radius: 15px;
-    background: var(--2, #859FBA);
-    /* width: 340px;
-    height: 108px; */
+    /* background: var(--2, #859FBA); */
+    background: var(--2, #dbdfe4);
 }
 
 .windows_text_1 {
@@ -1072,16 +1074,23 @@ a {
     height: 48px;
     padding: 30px 70px 30px 65px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.windows_text_2 {
+    width: 205px;
+    height: 24px;
+    padding: 42px 70px 42px 65px;
 }
 
 .window_img {
     background-image: url('./Img/secure.svg'), url('./Img/Ellipse_31.svg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: center;
-    top: 1500px;
-    left: 200px;
+    /* top: 2500px;
+    left: 200px; */
 }
 
 .wind_txt_style {
@@ -1093,10 +1102,4 @@ a {
     font-weight: 700;
     line-height: 24px;
     /* 150% */
-}
-
-.windows_text_2 {
-    width: 205px;
-    height: 24px;
-    padding: 42px 70px 42px 65px;
 }

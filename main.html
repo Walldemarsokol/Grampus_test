@@ -16,8 +16,8 @@
     </script>
     <section>
         <header>
-            <!-- Всплывающее окно -->
             <div class="head">
+                <!-- Всплывающее окно с пользовательским соглашением-->
                 <div class="css-modal-target" id="css-modal-target">
                     <div class="cmt">
                         <div class="first_txt_block">
@@ -78,9 +78,10 @@
                             <div class="block_1">
                                 Бесплатная консультация
                             </div>
+                            <!-- Всплывающее окно с формой обратной связи -->
                             <form action="#">
                                 <input type="text" class="block_2" placeholder="Ваше имя*" required>
-                                <input type="number" class="block_3" placeholder="Номер телефона*">
+                                <input type="tel" class="block_3" placeholder="Номер телефона*">
                                 <input type="text" class="block_4" placeholder="Ваш комментарий" required>
                                 <button class="block_5">
                                     </form>
@@ -95,6 +96,7 @@
                     <a href="#close" class="consult_modal-close"></a>
                 </div>
                 <div class="main__block">
+                    <!-- Верхний блок с меню и прочим -->
                     <div class="logo">
                         <a href="#">
                             <img src="./Img/logo.svg" alt="">
@@ -138,6 +140,7 @@
             </div>
         </header>
     </section>
+    <!-- Блок баннера с кнопкой обратной связи -->
     <section>
         <div class="banner__block">
             <div class="banner__blocks">
@@ -161,6 +164,7 @@
     </section>
     <section>
         <div class="body_block">
+            <!-- Материалы и слайдер -->
             <div class="materials_block">
                 <div class="first_block_materials">
                     <div class="main_category_text">
@@ -209,6 +213,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Блок форма -->
             <div class="block_form_main">
                 <div class="form_blocks">
                     <div class="h1_form">
@@ -218,12 +223,8 @@
                         Оставьте номер телефона, мы перезвоним в течение рабочего дня и проконсультируем по всем вопросам
                     </div>
                     <div class="form_buttons">
-                        <div class="button_left form_buttons_style">
-                            <div class="but_text_1 but_text_style">Ваше имя</div>
-                        </div>
-                        <div class="button_right form_buttons_style">
-                            <div class="but_text_2 but_text_style">Номер телефона*</div>
-                        </div>
+                        <input class="form_buttons_style but_text_style" type="text" placeholder="Ваше имя">
+                        <input class="form_buttons_style but_text_style" type="tel" placeholder="Номер телефона*">
                     </div>
                     <div class="third_block">
                         <div class="personal_text">
@@ -242,6 +243,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Блок о нас -->
             <div class="block_about">
                 <div class="orion_txt">
                     ООО «
@@ -294,14 +296,19 @@
                     </div>
                 </div>
             </div>
+            <!-- Блок с домом "Что привлекает наших клиентов" -->
             <div class="house">
                 <div class="house_content">
                     <div class="main_house_content">Что привлекает наших клиентов?</div>
                     <div class="house_txt">Наши преимущества</div>
-                    <div class="house_windows">
+                    <div class="house_windows wind_txt_style">
                         <div class="window window_style">
-                            <div class="window_img"></div>
-                            <div class="windows_text_1">Гарантия на каждую товарную позицию</div>
+                            <div class="wind_left">
+                                <div class="window_img"></div>
+                            </div>
+                            <div class="wind_right window_style">
+                                <div class="windows_text_1">Гарантия на каждую товарную позицию</div>
+                            </div>
                         </div>
                         <div class="window window_style">
                             <div class="windows_text_1">Ориентир на предпочтение клиента при выборе товара</div>
