@@ -2,32 +2,25 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-
 }
 
 @font-face {
     font-family: 'PTRootUIWebBold';
-    src:
-        url('./fonts/PT-Root-UI/pt-root-ui_bold.woff2') format('woff2'),
-        url('./fonts/PT-Root-UI/pt-root-ui_bold.woff') format('woff');
+    src: url('./fonts/PT-Root-UI/pt-root-ui_bold.woff2') format('woff2'), url('./fonts/PT-Root-UI/pt-root-ui_bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'PTRootUIWebMedium';
-    src:
-        url('./fonts/PT-Root-UI/pt-root-ui_medium.woff2') format('woff2'),
-        url('./fonts/PT-Root-UI/pt-root-ui_medium.woff') format('woff');
+    src: url('./fonts/PT-Root-UI/pt-root-ui_medium.woff2') format('woff2'), url('./fonts/PT-Root-UI/pt-root-ui_medium.woff') format('woff');
     font-weight: medium;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'PTRootUIWebRegular';
-    src:
-        url('./fonts/PT-Root-UI/pt-root-ui_regular.woff2') format('woff2'),
-        url('./fonts/PT-Root-UI/pt-root-ui_regular.woff') format('woff');
+    src: url('./fonts/PT-Root-UI/pt-root-ui_regular.woff2') format('woff2'), url('./fonts/PT-Root-UI/pt-root-ui_regular.woff') format('woff');
     font-weight: regular;
     font-style: normal;
 }
@@ -54,6 +47,8 @@
 }
 
 .block_2 {
+    text-align: start;
+    padding-left: 20px;
     color: var(--7, #0046BB);
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
@@ -66,41 +61,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 430px;
+    width: 410px;
     height: 54px;
 }
 
 .block_3 {
-    width: 430px;
+    text-align: start;
+    padding-left: 20px;
+    width: 410px;
     height: 54px;
+    font-family: "PTRootUIWebRegular";
     border-radius: 30px;
     border: 1px solid var(--7, #0046BB);
     background: var(--4, #FFF);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .block_4 {
     width: 430px;
     height: 150px;
     border-radius: 30px;
+    font-family: "PTRootUIWebRegular";
     border: 1px solid var(--7, #0046BB);
     background: var(--4, #FFF);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .block_5 {
     width: 430px;
     height: 54px;
     border-radius: 30px;
+    font-family: "PTRootUIWebRegular";
     background: var(--7, #0046BB);
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 20px;
 }
 
 .block_6 {
@@ -112,9 +114,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-
 }
-
 
 .block_6_ {
     color: var(--1, #383838);
@@ -136,10 +136,9 @@
     /* 150% */
 }
 
-
 .block_text_1 {
     color: var(--7, #0046BB);
-    font-family: "PT Root UI";
+    font-family: "PTRootUIWebRegular";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -159,6 +158,16 @@
     background-color: #FFF;
 }
 
+.input {
+    text-align: center;
+    color: var(--7, #0046BB);
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 .head {
     display: flex;
     justify-content: center;
@@ -174,8 +183,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
-
 
 .main__block {
     display: flex;
@@ -241,12 +248,10 @@
     gap: 15px;
 }
 
-
 .head_menu {
     width: 682px;
     display: flex;
     justify-content: space-between;
-
     /* 150% */
 }
 
@@ -336,7 +341,6 @@ a {
 
 .block_button {
     width: 259px;
-
 }
 
 .first_txt_block {
@@ -347,10 +351,8 @@ a {
     padding: 40px 90px 60px 90px;
 }
 
-
 .txt_decor_in_window {
     color: var(--1, #383838);
-
     /* Основной текст */
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
@@ -359,7 +361,9 @@ a {
     line-height: 24px;
 }
 
+
 /* Кнопка для открытия */
+
 .css-modal-open {
     display: inline-flex;
     padding: 15px 35px;
@@ -385,7 +389,9 @@ a {
     transform: translateX(0);
 }
 
+
 /* Контейнер, который затемняет страницу */
+
 .css-modal-target {
     display: none;
 }
@@ -404,7 +410,9 @@ a {
     background: rgba(39, 39, 39, 0.5);
 }
 
+
 /* Модальное окно */
+
 .css-modal-target .cmt {
     font-family: "PTRootUIWebBold";
     /* padding: 20px; */
@@ -422,7 +430,9 @@ a {
     animation: scale 0.5s ease;
 }
 
+
 /* Кнопка с крестиком закрывающая окно */
+
 .css-modal-close {
     position: relative;
     display: block;
@@ -453,12 +463,13 @@ a {
     cursor: default;
 }
 
+
 /* Анимации */
+
 @keyframes scale {
     0% {
         transform: scale(0);
     }
-
     100% {
         transform: scale(1);
     }
@@ -468,7 +479,6 @@ a {
     0% {
         right: -80px;
     }
-
     100% {
         right: 20px;
     }
@@ -478,13 +488,14 @@ a {
     0% {
         background: rgba(51, 122, 183, 0);
     }
-
     100% {
         background: rgba(39, 39, 39, 0.5);
     }
 }
 
+
 /* Кнопка для открытия */
+
 .consult_modal-open {
     display: inline-flex;
     padding: 15px 35px;
@@ -510,7 +521,9 @@ a {
     transform: translateX(0);
 }
 
+
 /* Контейнер, который затемняет страницу */
+
 .consult_modal-target {
     display: none;
 }
@@ -529,7 +542,9 @@ a {
     background: rgba(39, 39, 39, 0.5);
 }
 
+
 /* Модальное окно */
+
 .consult_modal-target .consult_cmt {
     font-family: "PTRootUIWebBold";
     z-index: 8;
@@ -544,7 +559,9 @@ a {
     animation: scale 0.5s ease;
 }
 
+
 /* Кнопка с крестиком закрывающая окно */
+
 .consult_modal-close {
     position: relative;
     display: block;
@@ -574,7 +591,6 @@ a {
     content: "";
     cursor: default;
 }
-
 
 .banner_button_style {
     border-radius: 30px;
@@ -620,7 +636,6 @@ a {
     align-items: center;
     padding-bottom: 40px;
     color: var(--1, #383838);
-
     /* Н-2 */
     font-family: "PTRootUIWebMedium";
     font-size: 40px;
@@ -639,11 +654,28 @@ a {
     padding: 26px 15px 5px 15px;
 }
 
+
+/* .categories_block.cat_text.round_button:hover {
+    background: var(--7, #0046BB);
+    background-image: url('./Img/Blue_arrow.svg'), url('./Img/white_elips.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    color: var(--4, #FFF);
+    font-family: "PT Root UI";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+} */
+
 .categories_block:hover {
     background: var(--7, #0046BB);
 }
 
-.cat_text:hover {
+.categories_block:hover .cat_text {
     color: var(--4, #FFF);
     font-family: "PT Root UI";
     font-size: 24px;
@@ -652,7 +684,7 @@ a {
     line-height: 32px;
 }
 
-.round_button:hover {
+.categories_block:hover .round_button {
     background-image: url('./Img/Blue_arrow.svg'), url('./Img/white_elips.svg');
     background-repeat: no-repeat;
     background-size: auto;
@@ -720,7 +752,6 @@ a {
     width: 492px;
     height: 96px;
     color: var(--4, #FFF);
-
     /* Н-2 */
     font-family: "PTRootUIWebBold";
     font-size: 40px;
@@ -742,7 +773,6 @@ a {
     line-height: 24px;
     /* 150% */
 }
-
 
 .form_buttons_style {
     width: 230px;
@@ -826,7 +856,6 @@ a {
     margin-top: 80px;
     width: 1170px;
     height: auto;
-
 }
 
 .elips {
@@ -841,7 +870,6 @@ a {
 .orion_txt {
     padding-bottom: 40px;
     color: var(--1, #383838);
-
     /* Н-2 */
     font-family: "PTRootUIWebMedium";
     font-size: 40px;
@@ -874,11 +902,9 @@ a {
     flex-wrap: wrap;
     gap: 30px;
     margin-left: 35px;
-
 }
 
 .mission {
-
     width: 385px;
     height: 183px;
     border-radius: 15px;
@@ -911,7 +937,6 @@ a {
 
 .h1_mission {
     color: var(--1, #383838);
-
     /* Н-4 */
     font-family: "PTRootUIWebMedium";
     font-size: 24px;
@@ -991,7 +1016,6 @@ a {
 
 .main_house_content {
     color: var(--4, #FFF);
-
     /* Н-2 */
     font-family: "PTRootUIWebBold";
     font-size: 40px;
@@ -1004,7 +1028,6 @@ a {
 .house_txt {
     padding-top: 5px;
     color: var(--4, #FFF);
-
     /* Основной текст */
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
@@ -1024,7 +1047,6 @@ a {
     justify-content: end;
     /* gap: 30px; */
 }
-
 
 .window_style {
     border-radius: 15px;
@@ -1052,7 +1074,6 @@ a {
 
 .wind_txt_style {
     color: var(--1, #383838);
-
     /* Н-6 */
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
