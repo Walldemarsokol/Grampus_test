@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link href="itc-slider.css" rel="stylesheet">
+    <script src="itc-slider.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style_2.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        src = 'script.js'
-    </script>
     <section>
         <header>
             <div class="head">
@@ -163,7 +161,7 @@
     <section>
         <div class="body_block">
             <!-- Материалы и слайдер -->
-            <div class="materials_block">
+            <div class="container">
                 <div class="first_block_materials">
                     <div class="main_category_text">
                         Категории материалов
@@ -177,40 +175,95 @@
                         </div>
                     </div>
                 </div>
-                <div class="categories">
-                    <div class="materials categories_block">
-                        <img class="block_img cat_img" src="./Img/mater_2.svg" alt="materials">
-                        <div class="text_block">
-                            <div class="cat_text">
-                                Строительные материалы
+                <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <div>
+                                    <div class="main_block ">
+                                        <div class="up_block">
+                                            <img class="cat_img" src="./Img/materials.svg" alt="materials">
+                                        </div>
+                                        <div class="down_block">
+                                            <div class="left_block main_block_text">
+                                                <div class="cat_text">
+                                                    Строительные материалы
+                                                </div>
+                                            </div>
+                                            <div class="right_block"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="round_button"></div>
+                            <div class="itc-slider-item">
+                                <div class="main_block ">
+                                    <div class="up_block">
+                                        <img class="cat_img" src="./Img/tools.svg" alt="tools">
+                                    </div>
+                                    <div class="down_block">
+                                        <div class="left_block">
+                                            <div class="cat_text">
+                                                Крепёжные инструменты
+                                            </div>
+                                        </div>
+                                        <div class="right_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item">
+                                <div class="main_block ">
+                                    <div class="up_block">
+                                        <img class="cat_img" src="./Img/finish.svg" alt="finish">
+                                    </div>
+                                    <div class="down_block">
+                                        <div class="left_block">
+                                            <div class="cat_text">
+                                                Отделочные материалы
+                                            </div>
+                                        </div>
+                                        <div class="right_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item">
+                                <div class="main_block ">
+                                    <div class="up_block">
+                                        <img class="cat_img" src="./Img/materials.svg" alt="materials">
+                                    </div>
+                                    <div class="down_block">
+                                        <div class="left_block">
+                                            <div class="cat_text">
+                                                Строительные материалы
+                                            </div>
+                                        </div>
+                                        <div class="right_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itc-slider-item">
+                                <div class="main_block ">
+                                    <div class="up_block">
+                                        <img class="cat_img" src="./Img/tools.svg" alt="tools">
+                                    </div>
+                                    <div class="down_block">
+                                        <div class="left_block">
+                                            <div class="cat_text">
+                                                Крепёжные инструменты
+                                            </div>
+                                        </div>
+                                        <div class="right_block"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="tools categories_block">
-                        <div class="block_img_2  cat_img">
-                            <img src="./Img/tools.svg" alt="tools">
-                        </div>
-                        <div class="text_block">
-                            <div class="cat_text">
-                                Крепёжные инструменты
-                            </div>
-                            <div class="round_button"></div>
-                        </div>
-                    </div>
-                    <div class="finish_materials categories_block">
-                        <div class="block_img_3  cat_img">
-                            <img width="339px" height="255px" src="./Img/finish.svg" alt="finish">
-                        </div>
-                        <div class="text_block">
-                            <div class="cat_text">
-                                Отделочные материалы
-                            </div>
-                            <div class="round_button"></div>
-                        </div>
-                    </div>
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
                 </div>
             </div>
+    </section>
+    <section>
+        <div class="body_block">
             <!-- Блок форма -->
             <div class="block_form_main">
                 <div class="form_blocks">
@@ -238,7 +291,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
             <!-- Блок о нас -->
+        <div class="body_block">
             <div class="block_about">
                 <div class="orion_txt">
                     ООО «
@@ -291,20 +348,27 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        
+        <div class="body_block">
+            <div class="secure_round"></div>
+            <div class="star_round"></div>
+            <div class="watch_round"></div>
+            <div class="hand_round"></div>
+            <div class="block_round"></div>
+            <div class="talk_round"></div>
             <!-- Блок с домом "Что привлекает наших клиентов" -->
             <!-- цвет блоков не соответствует изображению в фигма -->
             <div class="house">
                 <div class="house_content">
                     <div class="main_house_content">Что привлекает наших клиентов?</div>
                     <div class="house_txt">Наши преимущества</div>
-                    <div class="house_windows wind_txt_style">
+                    <div class="windows_up wind_txt_style">
                         <div class="window">
-                            <div class="wind_left">
-                                <div class="window_img"></div>
-                            </div>
-                            <div class="wind_right">
-                                <div class="windows_text_1">Гарантия на каждую товарную позицию</div>
-                            </div>
+                            
+                            <div class="windows_text_1">Гарантия на каждую товарную позицию</div>
                         </div>
                         <div class="window">
                             <div class="windows_text_1">Ориентир на предпочтение клиента при выборе товара</div>
@@ -312,6 +376,9 @@
                         <div class="window">
                             <div class="windows_text_1">Сжатые сроки поставки</div>
                         </div>
+
+                    </div>
+                    <div class="windows_down wind_txt_style">                        
                         <div class="window">
                             <div class="windows_text_2">Выгодные цены</div>
                         </div>
@@ -320,8 +387,7 @@
                         </div>
                         <div class="window">
                             <div class="windows_text_2">Оставить заявку</div>
-                        </div>
-                    </div>
+                        </div></div>
                 </div>
             </div>
         </div>

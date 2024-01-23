@@ -370,6 +370,7 @@ a {
 
 .block_button {
     width: 259px;
+    height: 54px;
 }
 
 .first_txt_block {
@@ -529,9 +530,10 @@ a {
 /* Кнопка для открытия */
 
 .consult_modal-open {
-    display: inline-flex;
-    padding: 15px 35px;
-    align-items: flex-start;
+    display: flex;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: center;
     color: var(--7, #0046BB);
     font-family: "PTRootUIWebBold";
     font-size: 16px;
@@ -626,7 +628,6 @@ a {
 
 .banner_button_style {
     border-radius: 30px;
-    border: 1px solid var(--8, #E6EDF8);
     background: var(--4, #FFF);
 }
 
@@ -641,11 +642,6 @@ a {
 
 .materials_block {
     width: 1170px;
-}
-
-.first_block_materials {
-    display: flex;
-    justify-content: space-between;
 }
 
 .arrows {
@@ -708,14 +704,6 @@ a {
     height: 50px;
 }
 
-.categories_block {
-    width: 370px;
-    height: 370px;
-    border-radius: 15px;
-    background: var(--5, #F2F5F5);
-    cursor: pointer;
-}
-
 .text_block {
     gap: 20px;
     display: flex;
@@ -759,11 +747,11 @@ a {
 
 .form_blocks {
     width: 492px;
-    height: 96px;
+    height: auto;
+    padding: 55px 0px 0px 80px;
 }
 
 .h1_form {
-    padding: 55px 598px 0px 80px;
     width: 492px;
     height: 96px;
     color: var(--4, #FFF);
@@ -777,9 +765,9 @@ a {
 }
 
 .h2_form {
+    padding-top: 10px;
     width: 495px;
     height: 48px;
-    padding: 10px 598px 40px 80px;
     color: var(--4, #FFF);
     font-family: "PTRootUIWebBold";
     font-size: 16px;
@@ -789,6 +777,7 @@ a {
 }
 
 .form_buttons_style {
+    /* padding-top: 30px; */
     width: 230px;
     height: 54px;
     border-radius: 30px;
@@ -807,15 +796,16 @@ a {
 
 .form_buttons {
     width: 492px;
-    padding-left: 80px;
     display: flex;
+    align-items: end;
     justify-content: end;
     gap: 30px;
+    padding-top: 40px;
 }
 
 .third_block {
     width: 492px;
-    padding: 37px 0px 0px 80px;
+    padding: 37px 0px 0px 0;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -879,7 +869,6 @@ a {
 }
 
 .orion_txt {
-    padding-bottom: 40px;
     color: var(--1, #383838);
     /* Н-2 */
     font-family: "PTRootUIWebMedium";
@@ -906,6 +895,7 @@ a {
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding-top: 40px;
 }
 
 .left_about {
@@ -1022,7 +1012,8 @@ a {
 
 .house_content {
     width: 1170px;
-    padding: 60px 375px 0 375px;
+    height: auto;
+    padding: 60px 0 0 375px;
 }
 
 .main_house_content {
@@ -1037,7 +1028,7 @@ a {
 }
 
 .house_txt {
-    padding-top: 5px;
+    padding: 5px 0 60px 0;
     color: var(--4, #FFF);
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
@@ -1046,35 +1037,116 @@ a {
     line-height: 24px;
 }
 
-.house_windows {
-    padding-top: 60px;
+.windows_up {
+    width: 1170px;
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: 340px 340px 340px;
-    grid-template-rows: 108px 108px;
     column-gap: 60px;
     row-gap: 30px;
     justify-content: end;
 }
 
+.windows_down{
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    column-gap: 60px;
+    justify-content: end;
+}
 
 .window {
+    width: 340px;
+    height: 108px;
     border-radius: 15px;
     background: var(--2, #859FBA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secure_round{
+    background-image: url('./Img/secure.svg'),url('./Img/Ellipse_31.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: absolute;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    top: 2700px;
+    left:375px;
+}
+
+.star_round{
+    background-image: url('./Img/star.svg'),url('./Img/Ellipse_31.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: absolute;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    top: 2700px;
+    left:775px;
+}
+
+.watch_round{
+    background-image: url('./Img/watch.svg'),url('./Img/Ellipse_31.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: absolute;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    top: 2700px;
+    left:1175px;
+}
+
+.block_round{
+    background-image: url('./Img/crop-svgrepo.svg'),url('./Img/Ellipse_31.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: absolute;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    top: 2835px;
+    left:775px;
+}
+
+.hand_round{
+    background-image: url('./Img/hand-money-cash.svg'),url('./Img/Ellipse_31.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: absolute;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    top: 2835px;
+    left:375px;
+}
+
+.talk_round{
+    background-image: url('./Img/chat.svg'),url('./Img/Ellipse_31.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: absolute;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    top: 2835px;
+    left:1175px;
 }
 
 .windows_text_1 {
     width: 205px;
     height: 48px;
-    padding: 30px 70px 30px 65px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .windows_text_2 {
     width: 205px;
     height: 24px;
-    padding: 42px 70px 42px 65px;
 }
 
 .window_img {
