@@ -3,13 +3,11 @@
     justify-content: center;
     align-items: center;
     color: var(--1, #383838);
-    /* Н-2 */
     font-family: "PTRootUIWebMedium";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
-    /* 120% */
 }
 
 .first_block_materials {
@@ -52,17 +50,6 @@
     background-position: center;
     width: 50px;
     height: 50px;
-}
-
-.cat_text {
-    color: var(--1, #383838);
-    font-family: "PTRootUIWebMedium";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    width: 166px;
-    height: 64px;
 }
 
 .main_block:hover {

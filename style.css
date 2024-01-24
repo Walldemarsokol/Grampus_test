@@ -65,24 +65,6 @@
     height: 54px;
 }
 
-.block_2_ {
-    text-align: start;
-    padding-left: 20px;
-    color: var(--7, #0046BB);
-    font-family: "PTRootUIWebRegular";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    border-radius: 30px;
-    background: var(--4, #FFF);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 54px;
-}
-
 .block_3 {
     text-align: start;
     padding-left: 20px;
@@ -162,20 +144,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    /* 150% */
-}
-
-.block_text_1 {
-    color: var(--7, #0046BB);
-    font-family: "PTRootUIWebRegular";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    border-radius: 30px;
-    border: 1px solid var(--7, #0046BB);
-    background: var(--4, #FFF);
-    /* 150% */
 }
 
 .center {
@@ -235,12 +203,6 @@
     width: 682px;
 }
 
-.info_tools {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
 .info_data {
     display: flex;
     justify-content: space-between;
@@ -281,16 +243,6 @@
     width: 682px;
     display: flex;
     justify-content: space-between;
-    /* 150% */
-}
-
-.call_button_ {
-    color: var(--4, #FFF);
-    font-family: "PTRootUIWebBold";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
 }
 
 a:hover {
@@ -325,7 +277,6 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    /* 150% */
     display: inline-flex;
     padding: 15px 35px;
     align-items: flex-start;
@@ -348,13 +299,11 @@ a {
 
 .block_h1 {
     color: var(--4, #FFF);
-    /* Н-1 */
     font-family: "PTRootUIWebRegular";
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: 72px;
-    /* 112.5% */
 }
 
 .block_h2 {
@@ -365,7 +314,6 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* 140% */
 }
 
 .block_button {
@@ -461,13 +409,10 @@ a {
 
 .css-modal-target .cmt {
     font-family: "PTRootUIWebBold";
-    /* padding: 20px; */
-    /* height: 2944px; */
     z-index: 8;
     max-width: 1170px;
     max-height: 100%;
     transition: 0.5s;
-    /* border: 6px solid #BFE2FF; */
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
@@ -593,7 +538,7 @@ a {
 }
 
 
-/* Модальное окно */
+/* Модальное окно консультации*/
 
 .consult_modal-target .consult_cmt {
     font-family: "PTRootUIWebBold";
@@ -667,35 +612,17 @@ a {
     gap: 30px;
 }
 
-.categories {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
 .main_category_text {
     display: flex;
     justify-content: start;
     align-items: center;
     padding-bottom: 40px;
     color: var(--1, #383838);
-    /* Н-2 */
     font-family: "PTRootUIWebMedium";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
-    /* 120% */
-}
-
-.block_img {
-    padding: 43px 0 30px 0;
-    gap: 20px;
-}
-
-.block_img_3 {
-    padding: 26px 15px 5px 15px;
 }
 
 .categories_block:hover {
@@ -720,19 +647,6 @@ a {
     height: 50px;
 }
 
-.text_block {
-    gap: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px 25px 35px;
-}
-
-.cat_img {
-    text-align: center;
-    width: 100%;
-}
-
 .cat_text {
     color: var(--1, #383838);
     font-family: "PTRootUIWebMedium";
@@ -742,15 +656,6 @@ a {
     line-height: 32px;
     width: 166px;
     height: 64px;
-}
-
-.round_button {
-    background-image: url('./Img/Arrow_Right.svg'), url('./Img/Ellipse_21.svg');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    width: 50px;
-    height: 50px;
 }
 
 .block_form_main {
@@ -771,13 +676,11 @@ a {
     width: 492px;
     height: 96px;
     color: var(--4, #FFF);
-    /* Н-2 */
     font-family: "PTRootUIWebBold";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
-    /* 120% */
 }
 
 .h2_form {
@@ -793,7 +696,6 @@ a {
 }
 
 .form_buttons_style {
-    /* padding-top: 30px; */
     width: 230px;
     height: 54px;
     border-radius: 30px;
@@ -831,13 +733,11 @@ a {
 .personal_text {
     width: 294px;
     color: var(--4, #FFF);
-    /* Вспомогательный */
     font-family: "PTRootUIWebMedium";
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    /* 142.857% */
 }
 
 .half_text_1 {
@@ -875,24 +775,13 @@ a {
     height: auto;
 }
 
-.elips {
-    width: 799.71px;
-    height: 501.729px;
-    transform: rotate(-30deg);
-    flex-shrink: 0;
-    border-radius: 799.71px;
-    border: 1px solid var(--8, #E6EDF8);
-}
-
 .orion_txt {
     color: var(--1, #383838);
-    /* Н-2 */
     font-family: "PTRootUIWebMedium";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
-    /* 120% */
     width: 1042px;
     height: 96px;
 }
@@ -954,13 +843,11 @@ a {
 
 .h1_mission {
     color: var(--1, #383838);
-    /* Н-4 */
     font-family: "PTRootUIWebMedium";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    /* 133.333% */
     padding: 25px 236px 5px 65px;
 }
 
@@ -972,7 +859,6 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    /* 150% */
 }
 
 .result {
@@ -986,13 +872,11 @@ a {
     width: 700px;
     height: 420px;
     color: var(--1, #383838);
-    /* Основной текст */
     font-family: "PTRootUIWebMedium";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
 }
 
 .txt_0 {
@@ -1034,13 +918,11 @@ a {
 
 .main_house_content {
     color: var(--4, #FFF);
-    /* Н-2 */
     font-family: "PTRootUIWebBold";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
-    /* 120% */
 }
 
 .house_txt {
@@ -1165,23 +1047,13 @@ a {
     height: 24px;
 }
 
-.window_img {
-    background-image: url('./Img/secure.svg'), url('./Img/Ellipse_31.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
 .wind_txt_style {
     color: var(--1, #383838);
-
-    /* Н-6 */
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    /* 150% */
 }
 
 .window:hover {
