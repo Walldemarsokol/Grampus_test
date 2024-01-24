@@ -378,7 +378,14 @@ a {
 }
 
 .txt_in_window {
-    padding: 40px 90px 60px 90px;
+    color: var(--1, #383838);
+    font-family: "PTRootUIWebRegular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    padding: 0 90px 60px 90px;
 }
 
 .txt_decor_in_window {
@@ -388,6 +395,15 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    line-height: 24px;
+}
+
+.decor_2_on_window {
+    color: var(--1, #383838);
+    font-family: "PTRootUIWebBold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 24px;
 }
 
@@ -1047,7 +1063,7 @@ a {
     justify-content: end;
 }
 
-.windows_down{
+.windows_down {
     width: 1170px;
     display: grid;
     grid-template-columns: 340px 340px 340px;
@@ -1065,76 +1081,76 @@ a {
     align-items: center;
 }
 
-.secure_round{
-    background-image: url('./Img/secure.svg'),url('./Img/Ellipse_31.svg');
+.secure_round {
+    background-image: url('./Img/secure.svg'), url('./Img/Ellipse_31.svg');
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
     position: absolute;
     background-position: center;
     width: 60px;
     height: 60px;
     top: 2700px;
-    left:375px;
+    left: 375px;
 }
 
-.star_round{
-    background-image: url('./Img/star.svg'),url('./Img/Ellipse_31.svg');
+.star_round {
+    background-image: url('./Img/star.svg'), url('./Img/Ellipse_31.svg');
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
     position: absolute;
     background-position: center;
     width: 60px;
     height: 60px;
     top: 2700px;
-    left:775px;
+    left: 775px;
 }
 
-.watch_round{
-    background-image: url('./Img/watch.svg'),url('./Img/Ellipse_31.svg');
+.watch_round {
+    background-image: url('./Img/watch.svg'), url('./Img/Ellipse_31.svg');
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
     position: absolute;
     background-position: center;
     width: 60px;
     height: 60px;
     top: 2700px;
-    left:1175px;
+    left: 1175px;
 }
 
-.block_round{
-    background-image: url('./Img/crop-svgrepo.svg'),url('./Img/Ellipse_31.svg');
+.block_round {
+    background-image: url('./Img/crop-svgrepo.svg'), url('./Img/Ellipse_31.svg');
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
     position: absolute;
     background-position: center;
     width: 60px;
     height: 60px;
     top: 2835px;
-    left:775px;
+    left: 775px;
 }
 
-.hand_round{
-    background-image: url('./Img/hand-money-cash.svg'),url('./Img/Ellipse_31.svg');
+.hand_round {
+    background-image: url('./Img/hand-money-cash.svg'), url('./Img/Ellipse_31.svg');
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
     position: absolute;
     background-position: center;
     width: 60px;
     height: 60px;
     top: 2835px;
-    left:375px;
+    left: 375px;
 }
 
-.talk_round{
-    background-image: url('./Img/chat.svg'),url('./Img/Ellipse_31.svg');
+.talk_round {
+    background-image: url('./Img/chat.svg'), url('./Img/Ellipse_31.svg');
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
     position: absolute;
     background-position: center;
     width: 60px;
     height: 60px;
     top: 2835px;
-    left:1175px;
+    left: 1175px;
 }
 
 .windows_text_1 {
@@ -1154,8 +1170,6 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    /* top: 2500px;
-    left: 200px; */
 }
 
 .wind_txt_style {
@@ -1166,7 +1180,8 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
 }
 
 .window:hover {
@@ -1179,7 +1194,7 @@ a {
     line-height: 24px;
 }
 
-.window:hover .wind_txt_style{
+.window:hover .wind_txt_style {
     color: var(--4, #FFF);
     font-family: "PTRootUIWebRegular";
     font-size: 16px;
